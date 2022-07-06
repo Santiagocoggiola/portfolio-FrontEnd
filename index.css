@@ -1,17 +1,67 @@
-nav {background-color: #1295c9; height: 100px; position: fixed;}
+* {font-family: 'Raleway', sans-serif;}
+nav {z-index: 2; background-color: #1295c9; height: 100px; position: fixed; }
 .navGuide{
     display:inline-block;
     color: rgba(0, 0, 0, 0.945);
-    font-family: Futura;
     font-size: 1.5vw;
     text-decoration:solid;
-    padding-top: 2%;
-    padding-left: 2%;
+    margin-left: 2%;
+    margin-top: 1%;
   }
-img.logo {height: 70px; width: auto;}
-img.banner {height: 700px; width: auto; margin-top: 50px;} 
-body {background-color: black;}
-.foto{height: 30%; width: auto; margin-left: 15%; margin-top: -5%}
-.about{margin-left: 50%; margin-top: 20%; font-family: Futura; color: white; font-size: 500%;}
-.rectangulo{font-size: 35px; border: 2px; border-color: white; border-style: solid; color: white; background-color: black; width: 60%; height: 150%;} 
-.endingFrame{background-color: black; width:auto; height: 500px;}
+body { background-color: black;}
+
+.endingFrame {margin-top: 10%; background-color: black;}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.foto {
+  width:fit-content;
+}
+
+.about {color:white; margin-left: 15%;}
+.cuadro {width: 150%;}
+.texto {width: 150%;}
+.expText {margin-left: 25%; color: white;}
+
+#frame4 .h2Edu {text-align: center; color: white; margin-top: 30px;}
+#frame4 p {text-align: left; color: white; margin-top: 35px; margin-left: 10%;}
+#frame4 .col-4 {border: 3px; border-style: solid; color: white; margin-top: 5px;}
+.eduText {margin-left: 50%; color: white;}
+
+
+h1 {font-size: 70px; color:white;}
+h2 {font-size: 40px; color:white;}
+p {font-size: 20px;}
+.rectangulo{
+  position: relative;
+  z-index: -1;
+}
+
+.foto {z-index: 1; margin-left: 60%;}
+/* Bottom right text */
+.aboutText {
+  position: absolute;
+  bottom: 30%;
+  background-color: black;
+  color: white;
+  margin-left: 10%;
+  text-align: center;
+  font-size: 20px;
+}
+.aboutTextFinal {text-align: left;}
+
+#frame5 h1 {margin-left: 25%;}
+#frame5 img {margin-top: 10%; margin-left: 15%;}
+.leng {margin-left: 25%;}
+
+#frame6 h1 {margin-left: 25%}
+#frame6 img {width: 70%; height: auto; margin-left: 15%; margin-top: 15%;}
+
+#frame1 {margin-top: 10%;}
+#frame2 {margin-top: 10%;}
+#frame3 {margin-top: 10%;}
+#frame4 {margin-top: 10%;}
+#frame5 {margin-top: 10%;}
+#frame6 {margin-top: 10%;}
