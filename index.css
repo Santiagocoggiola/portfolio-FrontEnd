@@ -6,7 +6,7 @@ body { background-color: black;}
 
 /*Navigation*/
 
-.navigation {border-style:solid; border-width: 2px; border-radius: 5px; border-color: rgb(255, 255, 255,0.3) ;background-color:#1295c9; margin-top:-10%; margin-bottom: 10%; margin-left: 1%}
+.navigation {border-style:solid; border-width: 2px; border-radius: 5px; border-color: rgb(255, 255, 255,0.3) ;background-color: #0074d9; margin-top:-10%; margin-bottom: 10%; margin-left: 1%}
 .navGuide img {width: 50%; height:auto; margin-left: 50%;}
 .navGuide{
     display:inline-block;
