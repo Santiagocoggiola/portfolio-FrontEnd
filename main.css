@@ -11280,4 +11280,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+@font-face {
+  font-family: "ralewaythin";
+  src: url("font/raleway-variablefont_wght-webfont.woff2") format("woff2"), url("font/raleway-variablefont_wght-webfont.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewaythin_italic";
+  src: url("font/raleway-italic-variablefont_wght-webfont.woff2") format("woff2"), url("font/raleway-italic-variablefont_wght-webfont.woff") format("woff");
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */
