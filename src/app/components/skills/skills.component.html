@@ -1,0 +1,8 @@
+<div class ="skill">
+    <h2> {{entryData?.skill}} </h2>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" [style.width.%]='entryData?.percentage' style = "color:white;"  aria-valuenow="entryData?.percentage" aria-valuemin="0" aria-valuemax="100">
+            {{ entryData?.percentage }}%
+        </div>
+    </div>
+</div>
