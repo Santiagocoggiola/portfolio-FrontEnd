@@ -1,0 +1,10 @@
+
+  
+  /*About Me */
+.about {margin-top: -35%; margin-left: 3%}
+.about img {width: 70%; height: auto;}
+.about h1 {margin-left: 2%; margin-top: 2%;}
+.about p {margin-bottom: 4%; margin-left: 2%; }
+.foto {margin-left: -15%; margin-top: 8%;}
+.rectangulo {border-style:solid; border-width: 2px; border-radius: 15px; color: rgb(255, 255, 255,0.3); margin-top: 3%; margin-left: -2%; width: 97%; height: auto;}
+.rectangulo h1 {margin-left: 1%;}
