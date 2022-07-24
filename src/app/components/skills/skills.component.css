@@ -1,6 +1,8 @@
 /*Skill*/
 
-.skill {margin-top: 5%; width: 70%; margin-left: 2%; margin-bottom: 3%;}
+.skill {margin-top: 5%; width: 70%; margin-left: 2%; margin-bottom: 3%; position:relative;}
 
 button {margin-left: 2%;}
 .row {margin-top: 2%;}
+.iconSkill {margin-left: 105%; margin-top: 3%; position:absolute;}
+.iconAdd {margin-left: 50%; position: relative; margin-top: 5%;}

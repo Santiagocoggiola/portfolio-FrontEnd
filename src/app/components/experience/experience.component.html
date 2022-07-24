@@ -1,13 +1,30 @@
 <div class = "newExp">
     <div class = "row">
         <div class ="col-1">
-            <img src="../assets/img/{{entryData?.logoPath}}">
+            <img [src]="this.retrivedImg.data">
         </div>
         <div class = "col-5">
-            <h2> {{entryData?.tittle}} </h2>
-            <h3> {{entryData?.position}} </h3>
+            <div *ngIf="logIn;"> 
+                <div class="iconExp">
+                    <tr class="trPhoto">
+                        <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                            <mat-icon class="iconLogo">create_round</mat-icon>
+                        </button>
+                    </tr>
+                </div>
+            </div>
+            <h2> {{entryData?.position}} </h2>
+            <h3> {{entryData?.place}} </h3>
             <p> {{entryData?.date}} </p>
+            <div *ngIf="boolAdd && logIn">
+                <div class="iconAdd">
+                    <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                        <mat-icon class="iconLogo">add_round</mat-icon>
+                    </button>
+                </div>
+            </div>
         </div>
+        
     </div>
 </div>
     

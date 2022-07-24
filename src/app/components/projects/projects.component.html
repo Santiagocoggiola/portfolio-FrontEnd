@@ -1,9 +1,25 @@
 <div class = "proj">
+    <div *ngIf="logIn;"> 
+        <div class="iconProj">
+            <tr class="trPhoto">
+                <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                    <mat-icon class="iconLogo">create_round</mat-icon>
+                </button>
+            </tr>
+        </div>
+    </div>
     <h2>{{entryData?.name}}</h2>
     <div class = "row">
-        <img src="../assets/img/{{entryData?.imgPath}}"/>
+        <img [src]="this.retrivedImg.data"/>
     </div>
     <div class ="row">
         <p>{{entryData?.description}}</p>
+    </div>
+    <div *ngIf="boolAdd && logIn">
+        <div class="iconAdd">
+            <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                <mat-icon class="iconLogo">add_round</mat-icon>
+            </button>
+        </div>
     </div>
 </div>

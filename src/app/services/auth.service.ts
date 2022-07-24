@@ -5,25 +5,28 @@ import {Router} from '@angular/router'
   providedIn: 'root'
 })
 export class AuthService {
-  uri = 'http://localhost:3000/api'; // La url que corresponda en cada caso
+  uri = 'http://localhost:8080/login'; // La url que corresponda en cada caso
   token : any;
   constructor(private http: HttpClient, private router: Router) { }
-  login(email: string, password: string) {
-    this.http.post(this.uri + '/autenticate', {email: email, password: password}).subscribe((resp:any) => {
-      //Redireccionamos al usuario a su perfil 
-      this.router.navigate(['profile']);
-      //Guardamos el token en localStorage
-      localStorage.setItem('auth_token', resp.token);
+  login(username: string, password: string) {
+    this.http.post(this.uri + `/getToken?username=${username}`, { password: password}, {responseType: 'text'})
+    .subscribe((resp:any) => {
+        //Redireccionamos al usuario a su perfil 
+        console.log(resp);
+        localStorage.setItem('auth_token', resp);
     })
   };
 
   //Para cerrar sesion eliminamos el token del localStorage
   logout(){
-    localStorage.removeItem('token');
+    localStorage.removeItem('auth_token');
   }
 
   //Un servicio para verificar si existe la sesion
   public get logIn():boolean{
-    return (localStorage.getItem('token') != null);
+    return (localStorage.getItem('auth_token') != null);
+  }
+  public get Token(){
+    return localStorage.getItem('auth_token');
   }
 }

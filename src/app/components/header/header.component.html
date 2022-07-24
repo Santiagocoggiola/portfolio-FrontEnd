@@ -1,14 +1,24 @@
 <div class="row">  
-    <div class ="col-5">
-        <img class ="logo" src = "../assets/img/Logo.png"/>
+    <div class ="col-4">
+        <img class ="logo" src = "../../assets/images/Logo.png"/>
     </div>
-    <div class ="col-5">
+    <div class ="col-3">
         <h3 class = "navGuide"> Santiago Coggiola </h3>
     </div>
-    <div class ="col-1">
-        <a class = "navGuide" href="https://www.linkedin.com/in/santiago-coggiola/" target="_blank"><img src="../assets/img/linkedin.png"></a>                 
+    <div class ="col-2">
+        <h3><button (click)="btnClickContact();" style="width:auto;" class = "navGuide"><i class="fa fa-plus"></i> Contact Me</button> </h3>
+    </div>
+    <div class ="col-2">
+        <a class = "navGuide" href="https://www.linkedin.com/in/santiago-coggiola/" target="_blank"><img src="../../assets/images/linkedin.png"></a>                 
     </div>   
     <div class ="col-1">
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class = "navGuide">Login</button> 
+        <div *ngIf="logIn; else content">
+            <h3> <button (click)="btnClickLogout();" style="width:auto;" class = "navGuide"><i class="fa fa-plus"></i> Logout</button> </h3>
+        </div>
+        <ng-template #content>
+            <h3> <button (click)="btnClickLogin();" style="width:auto;" class = "navGuide"><i class="fa fa-plus"></i> Login</button> </h3>
+        </ng-template>     
     </div>    
 </div>
+
+

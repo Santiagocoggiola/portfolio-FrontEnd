@@ -1,0 +1,42 @@
+<div class="navigation">
+    <app-header> </app-header>
+</div>
+
+  <div class="banner">
+    <app-banner [entryData] = "ban" *ngFor="let ban of banner"> </app-banner>
+  </div>
+
+  <div class = "about">
+    <app-about [entryData] = "ab" *ngFor="let ab of about"></app-about>
+  </div>
+<div class="main">  
+  <div class = "experience">
+    <div class = "row">
+      <h1 class = "expText">Experience</h1>
+    </div>
+    <app-experience [boolAdd] = "last" [entryData] = "ex" *ngFor="let ex of experience; let last = last"></app-experience>
+  </div>
+  <div class="education">
+    <div class = "row">
+      <h1 class = "eduText">Education</h1>
+    </div>
+    <app-education [boolAdd] = "last" [entryData] = "ed" *ngFor="let ed of education; let last = last"></app-education>
+  </div>
+  <div class="skills">
+    <div class="row">
+      <h1 class="skillText"> Skills </h1>
+    </div>
+    <app-skills [boolAdd] = "last" [entryData] = "skill" *ngFor="let skill of skills; let last = last"></app-skills>
+  </div>
+  <div class="projects">
+    <h1>Projects</h1>
+    <app-projects [boolAdd] = "last" [entryData] = "pro" *ngFor="let pro of projects; let last = last"></app-projects>
+  </div>
+  <div class="tecnologies">
+    <h1>I work with these tecnologies</h1>
+    <app-tecnologies [boolAdd] = "last" [entryData] = "tec" *ngFor="let tec of tecnologies; let last = last"></app-tecnologies>
+  </div>  
+</div>
+<div class="endingFrame"> </div>
+
+ 

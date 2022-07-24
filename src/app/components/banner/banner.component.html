@@ -1,7 +1,19 @@
 <div class ="ban">
     <div class ="row">
         <div class="col-12">
-            <img class = "banner" src="../../assets/img/{{img}}"/>
+            <div *ngIf="logIn;"> 
+                <div class="iconPhoto">
+                    <tr class="trPhoto">
+                        <button type="button" (click)="editOnClick(0, 'imgPath', 'img')" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                            <mat-icon class="iconLogo">create_round</mat-icon>
+                        </button>
+                    </tr>
+                </div>
+            </div>
+            <img class = "banner" [src]="this.retrivedImg.data"/>
+            <div class ="row" *ngIf="Edit">
+                <app-dynamic-form (newBoolEvent) = "eventEdit($event)" [entryData]="entryData" [entryProp]="sendData" (newItemEvent) = "addItem($event)" ></app-dynamic-form>
+            </div>
         </div> 
     </div>
 </div>

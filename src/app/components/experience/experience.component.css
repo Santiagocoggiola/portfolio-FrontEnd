@@ -1,7 +1,9 @@
 /*Experience*/
 
-.newExp {margin-left: 5%; margin-bottom: 3%; margin-top: 3%;}
+.newExp {margin-left: 5%; margin-bottom: 3%; margin-top: 3%; position: relative;}
 .newExp h3, .newExp p, .newExp h2 {margin-left: 26%;}
 .newExp p {margin-bottom: 8%;}
 .expText {margin-left: 2%; margin-top: 2%;}
 .newExp img {width: 80%; height: auto; margin-left: 30%;}
+.iconExp {margin-left: 25%; margin-top: 1%; position: absolute;}
+.iconAdd {position: absolute; margin-left: 15%;}

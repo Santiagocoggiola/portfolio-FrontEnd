@@ -1,10 +1,37 @@
 
   
   /*About Me */
-.about {margin-top: -35%; margin-left: 3%}
+.about {margin-top: -35%; margin-left: 3%; position: relative;}
 .about img {width: 70%; height: auto;}
 .about h1 {margin-left: 2%; margin-top: 2%;}
 .about p {margin-bottom: 4%; margin-left: 2%; }
 .foto {margin-left: -15%; margin-top: 8%;}
 .rectangulo {border-style:solid; border-width: 2px; border-radius: 15px; color: rgb(255, 255, 255,0.3); margin-top: 3%; margin-left: -2%; width: 97%; height: auto;}
 .rectangulo h1 {margin-left: 1%;}
+
+
+.iconPhoto {margin-left: 3.5%; margin-top: 9%;position:absolute;}
+.iconLogo { margin-top: 4%; color: white; }
+.iconText {margin-left: 98%; margin-top: -0.5%; position:absolute;}
+
+.trPhoto {
+  margin-right: .5rem;
+  opacity: 0;
+  transition: opacity .2s ease-out;
+  cursor: pointer;
+  transition-delay: .10s;
+}
+.trPhoto:hover {
+  opacity: 1;
+  transition-delay: 0s;
+}
+form button {margin-top: 10%;}
+form {
+  width: 80%; 
+  height: auto; 
+  position:absolute; /* or absolute */
+  top: 30%;
+  left: 10%;
+  color: black;
+}
+
