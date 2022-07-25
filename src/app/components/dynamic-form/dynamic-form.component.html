@@ -1,0 +1,39 @@
+<form [formGroup]="form" [style.display] = "display">
+    
+    <div *ngIf="'img' === entryProp?.field else content">
+        <label for="item"><b>Change Element</b></label>
+        <div class="row">
+            <div class ="col-4">
+                <input type="file"title="Select file" name="file" (change)="onFileSelected($event)"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class ="col-4">
+                <button class = "btn btn-primary" type="submit" (click)="onUpload(); changeImg();">Submit</button>
+            </div>
+            <div class ="col-3">
+                <button type="button" (click)="closeModal(false);" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <ng-template #content>
+        <div *ngIf="'text' == entryProp?.field">
+            <label for="item"><b>Change Element</b></label>
+            <div class="row">
+                <div class ="col-4">
+                    <input type="text" placeholder="Enter new element" formControlName="element" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <button class = "btn btn-primary" type="submit" (click)="tryToEdit();">Submit</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" (click)="closeModal(false);" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+            
+        </div>
+    </ng-template>
+    
+</form>

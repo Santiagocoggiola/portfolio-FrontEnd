@@ -1,5 +1,12 @@
 /*Contact*/
 
 
-form {width: 80%; height: auto; margin-left: 2%;}
+form {
+    width: 80%; 
+    height: auto; 
+    position:absolute; /* or absolute */
+    top: 30%;
+    left: 10%;
+}
 button {margin-top: 10%;}
+

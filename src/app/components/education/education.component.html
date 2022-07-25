@@ -1,14 +1,33 @@
 <div class = "newEdu">
     <div class ="row">
         <div class ="col-2">
-            <img src="../assets/img/{{entryData?.logoPath}}"/>
+            <img [src]="this.retrivedImg.data"/>
         </div>
         <div class = "col-5">
+            
+            <div *ngIf="logIn;"> 
+                <div class="iconEdu">
+                    <tr class="trPhoto">
+                        <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                            <mat-icon class="iconLogo">create_round</mat-icon>
+                        </button>
+                    </tr>
+                </div>
+            </div>
             <div class="h2Edu">
                 <h2> {{entryData?.university}}</h2>
                 <h3>{{entryData?.career}}</h3>
                 <p> {{entryData?.date}} </p>
             </div>
+            <div *ngIf="boolAdd && logIn">
+                <div class="iconAdd">
+                    <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                        <mat-icon class="iconLogo">add_round</mat-icon>
+                    </button>
+                </div>
+            </div>
+            
         </div>
     </div>
+   
 </div>

@@ -1,6 +1,8 @@
 /*Projects*/
-
+.proj {position:relative;}
 h2 {margin-top: 5%; margin-left: 2%;}
 h1 {margin-left: 2%;}
-p {margin-top: 2%; margin-left: 2%;}
-img {width: 30%; height: auto; margin-left: 35%;}
+p {margin-top: 2%; margin-left: 2%; padding-bottom: 8%;}
+img {width: 30%; height: auto; margin-left: 35%; }
+.iconProj {position:absolute; margin-left: 80%;}
+.iconAdd {position:absolute; margin-left:50%; margin-top: -4%; }

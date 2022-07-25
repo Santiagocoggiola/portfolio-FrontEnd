@@ -1,4 +1,6 @@
 /*Education*/
 
 .eduText {margin-left: 2%; margin-top: 2%;}
-.newEdu {margin-left: 5%; margin-bottom: 3%; margin-top: 3%; }
+.newEdu {margin-left: 5%; margin-bottom: 3%; margin-top: 3%; position: relative; }
+.iconEdu {margin-left: 20%; margin-top: 1%; position: absolute;}
+.iconAdd {position: absolute; margin-left: 5%;}

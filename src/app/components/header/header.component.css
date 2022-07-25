@@ -1,21 +1,27 @@
 /*Navigation*/
-.navGuide img {width: 50%; height:auto; margin-left: 50%;}
+.navGuide img {width: 30%; height:auto; margin-left: 50%;}
 .navGuide{
     display:inline-block;
     font-weight: 900;
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     text-decoration:solid;
     border-color: transparent; 
     background-color: transparent;
     align-items: baseline;
 }
-.logo {margin-top: 1%; margin-left: 2%;}
+.logo {margin-top: 5%; margin-left: 2%; width: 50%; height: auto;}
 
 h3 {
-    margin-top:3%;
+    margin-top:7%;
 }
 button {
-    margin-top: 10%;
+    margin-top: 8%;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
 }
 
+div .col-1 button {margin-top: 20%;}
+
+* {align-items: center;}

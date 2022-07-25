@@ -1,14 +1,52 @@
 <div class = "row">
+    
     <div class = "col">
-        <img src = "../assets/img/{{entryData?.logoPath1}}"/>
+        <div class="iconTec">
+            <tr class="trPhoto">
+                <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                    <mat-icon class="iconLogo">create_round</mat-icon>
+                </button>
+            </tr>
+        </div>
+        <img [src] = "this.retrivedImg[0].data"/>
     </div>
     <div class = "col">
-        <img src = "../assets/img/{{entryData?.logoPath2}}"/>
+        <div class="iconTec">
+            <tr class="trPhoto">
+                <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                    <mat-icon class="iconLogo">create_round</mat-icon>
+                </button>
+            </tr>
+        </div>
+        <img [src] = "this.retrivedImg[1].data"/>
     </div>
     <div class = "col">
-        <img src = "../assets/img/{{entryData?.logoPath3}}"/>
+        <div *ngIf="logIn;"> 
+            <div class="iconTec">
+                <tr class="trPhoto">
+                    <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                        <mat-icon class="iconLogo">create_round</mat-icon>
+                    </button>
+                </tr>
+            </div>
+        </div>
+        <img [src] = "this.retrivedImg[2].data"/>
     </div>
     <div class = "col">
-        <img src = "../assets/img/{{entryData?.logoPath4}}"/>
+        <div class="iconTec">
+            <tr class="trPhoto">
+                <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                    <mat-icon class="iconLogo">create_round</mat-icon>
+                </button>
+            </tr>
+        </div>
+        <img [src] = "this.retrivedImg[3].data"/>
+    </div>
+    <div *ngIf="boolAdd && logIn">
+        <div class="iconAdd">
+            <button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
+                <mat-icon class="iconLogo">add_round</mat-icon>
+            </button>
+        </div>
     </div>
 </div>
